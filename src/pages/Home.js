@@ -17,19 +17,19 @@ const Home = () => {
 
   return (
     <main>
-      <section className="container">
-        <h2>Home</h2>
+      <section className="container-search">
+        <h3>Encuentra tu playa favorita y disfruta.</h3>
 
         <form method="get" action="/" onSubmit={handleSubmit}>
-          <label htmlFor="search">Search</label>
-          <input
+          <label htmlFor="search"></label>
+          <input className="input"
             type="search"
             id="search"
-            placeholder="Municipality to search"
+            placeholder="Buscar localidades.."
             value={searchString}
             onChange={handleChange}
           />
-          <button type="submit">Search</button>
+          <button className="btn" type="submit"></button>
         </form>
       </section>
     </main>

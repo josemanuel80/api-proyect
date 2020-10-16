@@ -3,7 +3,9 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-      <h1>Playas</h1>
+      <div className="header-content">
+      <h1>Playas Españolas</h1>
+    </div>
     </header>
   );
 };

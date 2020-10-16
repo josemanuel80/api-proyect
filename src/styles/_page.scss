@@ -1,0 +1,30 @@
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around
+
+  
+}
+// .student {
+//   border: 1px solid;
+//   padding: 1.25rem;
+//   flex-basis: calc(25% - 1.25rem);
+//   margin-bottom: 1.25rem;
+  
+
+
+.beach-info{
+  border: 3px dashed black;
+  padding: 1.25rem;
+  flex-basis: calc(25% - 1.25rem);
+  margin-bottom: 1.25rem;
+  text-align: justify;
+  
+
+}
+
+
+picture{
+  height: 1px;
+  width: 1px;
+}

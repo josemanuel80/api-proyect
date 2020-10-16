@@ -1,9 +1,16 @@
-footer {
-  background-color: black;
-  color: white;
-  padding: 1.25rem;
+footer{
+	width: 100%;
+	bottom: 0;
+	height: 70px;
+	position: fixed;
+	background-color:black;
+  box-shadow: 1px 1px 5px #000;
+  text-align: center;
+  background:gray;
+  color: azure;
+  text-overflow: ellipsis;
 
-  p {
-    text-align: center;
-  }
-}
+
+}	
+
+

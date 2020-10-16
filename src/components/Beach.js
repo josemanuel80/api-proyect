@@ -7,12 +7,12 @@ const Beach = ({ data }) => {
   const blueFlag = data.properties.Bandera_az === 'Sí';
 
   return (
-    <article key={data.properties.OBJECTID}>
+    <article className="beach-info" key={data.properties.OBJECTID}>
       <h3>{data.properties.Nombre}</h3>
-      <div>
+      <div className="icon">
         {blueFlag && (
           <picture>
-            <img src={blueFlagSvg} alt="blue flag" />
+            <img className="icon" src={blueFlagSvg} alt="blue flag" />
           </picture>
         )}
         {disabilityAccess && (
@@ -22,18 +22,20 @@ const Beach = ({ data }) => {
         )}
       </div>
 
-      <dl>
-        <dt>Municipio</dt>
-        <dd>{data.properties.Término_Mu}</dd>
-        <dt>Acceso de discapacidad</dt>
-        <dd>{data.properties.Acceso_dis}</dd>
-        <dd>{data.properties.Tipo_de_ar}</dd>
-        <dt>Bandera azul</dt>
-        <dd>{data.properties.Bandera_az}</dd>
-        <dt>Forma de accesso</dt>
-        <dd>{data.properties.Forma_de_a}</dd>
-        <dd>{data.properties.Observacio}</dd>
-      </dl>
+      <ul>
+        <dl>Localidad:</dl>
+        <dt>{data.properties.Término_Mu}</dt>
+        <dl>Acceso de discapacidad:</dl>
+        <dt>{data.properties.Acceso_dis}</dt>
+        <dl>Tipo de arena:</dl>
+        <dt>{data.properties.Tipo_de_ar}</dt>
+        <dl>Bandera azul:</dl>
+        <dt>{data.properties.Bandera_az}</dt>
+        <dl>Forma de accesso:</dl>
+        <dt>{data.properties.Forma_de_a}</dt>
+        <dl>Caracteristicas:</dl>
+        <dt>{data.properties.Observacio}</dt>
+      </ul>
     </article>
   );
 };

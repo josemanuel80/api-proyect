@@ -27,8 +27,10 @@ const Results = () => {
 
   return (
     <main className="page">
-      <h2>Results {beachesToRender.length}</h2>
-      {loading && <h3>Loading</h3>}
+      <div className="results-container">
+      <h2>Resultados en la búsqueda: {beachesToRender.length}</h2>
+        {loading && <h3>Loading Results..</h3>}
+        </div>
 
       {beachesToRender.map((beach) => (
         <Beach key={beach.properties.OBJECTID} data={beach} />

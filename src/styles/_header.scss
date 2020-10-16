@@ -1,4 +1,18 @@
-img {
-  // background-image: url('https://cdn.pixabay.com/photo/2016/03/01/17/01/beach-1230721_960_720.jpg');
-  background-size: contain;
+header{
+  display: block;
+  background: grey;
+  position: fixed;
+  top: 0px;
+  padding-bottom: 1px;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0);
+  text-align: center;
+}
+
+.header-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
